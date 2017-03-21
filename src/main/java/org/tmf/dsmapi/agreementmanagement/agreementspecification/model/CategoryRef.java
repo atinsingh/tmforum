@@ -1,17 +1,30 @@
-package org.tmf.dsmapi.agreement.model;
+package org.tmf.dsmapi.agreementmanagement.agreementspecification.model;
+
+import java.io.Serializable;
 
 /**
  * Created by atinsingh on 3/20/17.
  */
-public class PartyRoleRef {
+public class CategoryRef implements Serializable {
 
-    protected String id;
+    protected  String id;
+
     protected String href;
+
     protected String name;
 
-    protected String partyID;  // Should be replaced with PartyRole object.
+    protected String version;
 
-    protected String partyName;
+
+    public CategoryRef() {
+    }
+
+    public CategoryRef(String id, String href, String name, String version) {
+        this.id = id;
+        this.href = href;
+        this.name = name;
+        this.version = version;
+    }
 
     public String getId() {
         return id;
@@ -37,30 +50,21 @@ public class PartyRoleRef {
         this.name = name;
     }
 
-    public String getPartyID() {
-        return partyID;
+    public String getVersion() {
+        return version;
     }
 
-    public void setPartyID(String partyID) {
-        this.partyID = partyID;
-    }
-
-    public String getPartyName() {
-        return partyName;
-    }
-
-    public void setPartyName(String partyName) {
-        this.partyName = partyName;
+    public void setVersion(String version) {
+        this.version = version;
     }
 
     @Override
     public String toString() {
-        return "PartyRoleRef{" +
+        return "CategoryRef{" +
                 "id='" + id + '\'' +
                 ", href='" + href + '\'' +
                 ", name='" + name + '\'' +
-                ", partyID='" + partyID + '\'' +
-                ", partyName='" + partyName + '\'' +
+                ", version='" + version + '\'' +
                 '}';
     }
 }

@@ -1,4 +1,4 @@
-package org.tmf.dsmapi.agreement.model;
+package org.tmf.dsmapi.agreementmanagement.agreement.model;
 
 /**
  * Created by atinsingh on 3/20/17.
