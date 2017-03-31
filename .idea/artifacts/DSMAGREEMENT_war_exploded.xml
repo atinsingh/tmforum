@@ -6,6 +6,9 @@
         <element id="directory" name="classes">
           <element id="module-output" name="DSMAGREEMENT" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final" />
+        </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/agreement/META-INF/MANIFEST.MF" />
